@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Angular Layout Reusable</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <!-- Reusing , Evict news Calls in scripts files, css files and other files -->
+        <script src="resources/vendor/angular/angular-1.4.7.min.js"></script> 
+        <script src="resources/vendor/angular/angular-route-1.4.7.min.js"></script>
+        
+         <!-- Using ngRoute -->
+        <script src="resources/angular/rota/rota.js"></script>   
+        <!-- Define not use cache, Default enabled cache -->
+        <script src="resources/angular/cache/cache.js"></script>  
+        
+       <link href="resources/css/bootstrap-3.3.5.min.css" rel="stylesheet">  
+    </head>
+
+    <body>   
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+             <div class="container-fluid">
+               <div class="navbar-header">
+                 <a class="navbar-brand" href="#/home">Home</a>
+               </div>
+               <div>
+                 <ul class="nav navbar-nav">
+                   <li><a href="#/pagina1"> Página 1</a></li>
+                   <li><a href="#/pagina2"> Página 2</a></li>
+                   <li><a href="#/pagina3"> Página 3</a></li>
+                 </ul>
+               </div> 
+             </div>
+           </nav>     
+        
+        <div ng-app="RouteApp">     
+            <div ng-view>    
+            </div> 
+        </div> 
+       
+        
+    </body>
+
+</html>
